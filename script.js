@@ -15,7 +15,11 @@ function qr_genrator() {
       let download = document.getElementById("download_button");
       download.href = src;
       download.style.display = "block";
-    }, 200);
+      // Mobile: open in new tab instead
+      if (window.innerWidth <= 768) {
+        download.target = "_blank";
+      }
+    }, 1000);
   });
 }
 
