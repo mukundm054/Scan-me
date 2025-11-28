@@ -15,7 +15,7 @@ function qr_genrator() {
       let download = document.getElementById("download_button");
       download.href = src;
       download.style.display = "block";
-    }, 200);
+    }, 1000);
   });
 }
 
